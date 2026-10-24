@@ -1,8 +1,8 @@
-# Project 04: Web Scraper for Headlines & Quotes
+# Project 04: Web Scraper for Quotes
 
 ## Project Description
 
-This project is a Python-based web scraper developed as part of the InternCircle Python project series. It extracts quotes, author names, and tags from the practice website [Quotes to Scrape](https://quotes.toscrape.com/).
+This project is a Python-based web scraper developed as part of the InternCircle Python Project Series. It extracts quotes, author names, and tags from the practice website [Quotes to Scrape](https://quotes.toscrape.com/).
 
 The program uses the Requests library to retrieve web pages and BeautifulSoup to parse HTML content. It automatically navigates through multiple pages, collects quote information, and saves the extracted data in JSON and text formats.
 
@@ -38,16 +38,16 @@ The scraper was successfully executed and collected **100 quotes across 10 pages
 ## Project Structure
 
 ```text
-Project-04-Web-Scraper/
+interncircle-Web-Scraper-for-Headlines-Quotes/
 │
+├── .gitignore
+├── README.md
 ├── scraper.py
 ├── requirements.txt
-├── README.md
 ├── quotes.json
-└── quotes.txt
+├── quotes.txt
+└── Screenshot 2026-10-24 113452.png
 ```
-
-A `screenshots/` folder may also be included to demonstrate successful execution.
 
 ## Installation and Setup
 
@@ -55,37 +55,40 @@ A `screenshots/` folder may also be included to demonstrate successful execution
 
 - Python 3 installed on your computer
 - Visual Studio Code or another Python editor
+- Git installed on your computer (for cloning the repository)
 - An internet connection
 
 ### Step 1: Clone the Repository
 
-```bash
-git clone https://github.com/YOUR-USERNAME/interncircle-project-04-web-scraper.git
-```
+Open PowerShell or a terminal and run:
 
-Replace `YOUR-USERNAME` with your GitHub username.
+```bash
+git clone https://github.com/Jagriti0326/interncircle-Web-Scraper-for-Headlines-Quotes.git
+```
 
 ### Step 2: Navigate to the Project Folder
 
 ```bash
-cd interncircle-project-04-web-scraper
+cd interncircle-Web-Scraper-for-Headlines-Quotes
 ```
 
 ### Step 3: Create a Virtual Environment (Recommended)
 
-On Windows:
+On Windows, run:
 
 ```powershell
 python -m venv .venv
 ```
 
-Activate it in PowerShell:
+Activate the virtual environment in PowerShell:
 
 ```powershell
 .\.venv\Scripts\Activate.ps1
 ```
 
 ### Step 4: Install Dependencies
+
+Run the following command:
 
 ```bash
 python -m pip install -r requirements.txt
@@ -100,13 +103,13 @@ beautifulsoup4
 
 ## How to Run the Project
 
-Run the following command from the project directory:
+After installing the dependencies, run:
 
 ```bash
 python scraper.py
 ```
 
-The program will visit the website, collect quotes from available pages, and save the results.
+The program will visit the website, collect quotes from available pages, and save the results in JSON and text files.
 
 ## Output Files
 
@@ -145,16 +148,4 @@ Through this project, I gained practical experience with:
 - Lists and dictionaries
 - JSON serialization and file handling
 - Exception handling and debugging
-- Working with third-party Python libraries
-
-## Responsible Web Scraping
-
-This project uses Quotes to Scrape, a website intended for web-scraping practice. The program includes a short delay between requests and a timeout to help avoid unnecessarily prolonged requests.
-
-## Author
-
-**Name:** Jagriti Singhal  
-**Program:** InternCircle Python Project Series  
-**Project Number:** 04  
-**Project Title:** Web Scraper for Quotes
-
+- Working with
